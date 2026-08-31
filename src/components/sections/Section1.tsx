@@ -63,15 +63,15 @@ const Section1 = () => {
           </span>
         </h2>
 
-        {/* Cards */}
+        {/* Cards - hover: lift + shadow + border color */}
         <div className="mt-10 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
           {brands.map((b) => (
-            <div key={b.logo} className="flex flex-col items-center">
-              <div className="w-full h-full overflow-hidden  border border-black/5 rounded-[2px] shadow-sm">
+            <div key={b.logo} className="flex flex-col items-center group cursor-pointer">
+              <div className="w-full h-full overflow-hidden border border-black/5 rounded-[8px] shadow-sm bg-white group-hover:shadow-[6px_6px_0px_0px_#000] group-hover:border-black group-hover:-translate-y-2 transition-all duration-300">
                 <img
                   src={b.img}
                   alt={b.alt}
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-center group-hover:scale-[1.04] transition-transform duration-500"
                   loading="lazy"
                 />
               </div>

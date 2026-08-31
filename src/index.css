@@ -4,25 +4,49 @@
   --font-sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
 
+body {
   margin: 0;
   padding: 0;
-
-  /* Font - loaded via <link> in index.html header */
   font-family: var(--font-sans);
-
-  /* Text */
   color: #111;
   line-height: 1.5;
-
-  /* Background */
   background-color: #000000;
-
-  /* Prevent accidental horizontal scrolling */
   overflow-x: hidden;
-
-  /* Better text rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global hover transitions - smooth by default */
+a, button {
+  transition-property: color, background-color, border-color, transform, box-shadow, opacity;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+/* Focus visible for accessibility */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* Mobile menu slide down animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle hover glow for cards on light backgrounds */
+::selection {
+  background: #FF6B1A;
+  color: white;
 }

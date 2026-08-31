@@ -27,6 +27,7 @@ const Section9 = () => {
                 color: "#009387",
                 letterSpacing: "-0.5px",
               }}
+              className="hover:text-[#FF6B1A] transition-colors duration-300 cursor-default"
             >
               insights
             </span>
@@ -35,32 +36,71 @@ const Section9 = () => {
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-6">
           {/* Card 1 */}
-          <a href="#" className="group bg-white border border-black/5 rounded-[6px] overflow-hidden hover:shadow-[3px_3px_0px_0px_#000] hover:border-black transition-all">
+          <a
+            href="#"
+            onClick={(e) => e.preventDefault()}
+            className="group bg-white border border-black/5 rounded-[12px] overflow-hidden shadow-sm hover:shadow-[5px_5px_0px_0px_#000] hover:border-black hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+          >
             <div className="aspect-[1.5] overflow-hidden bg-[#F5F5F5]">
-              <img src={costImg} alt="3 Low-Cost Campaigns" className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" />
+              <img
+                src={costImg}
+                alt="3 Low-Cost Campaigns"
+                className="w-full h-full object-cover group-hover:scale-[1.07] transition-transform duration-500"
+              />
             </div>
             <div className="p-4">
-              <h3 className="text-[15px] font-[700] leading-[1.3] tracking-[-0.02em] text-[#1A1A1A]">3 Low-Cost Campaigns You Must Run to Win BFCM</h3>
+              <h3 className="text-[15px] font-[700] leading-[1.3] tracking-[-0.02em] text-[#1A1A1A] group-hover:text-[#009387] transition-colors">
+                3 Low-Cost Campaigns You Must Run to Win BFCM
+              </h3>
+              <span className="mt-2 inline-flex items-center text-[11px] font-[700] tracking-[0.04em] uppercase text-[#FF6B1A] opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-300">
+                Read more →
+              </span>
             </div>
           </a>
 
           {/* Card 2 */}
-          <a href="#" className="group bg-white border border-black/5 rounded-[6px] overflow-hidden hover:shadow-[3px_3px_0px_0px_#000] hover:border-black transition-all">
+          <a
+            href="#"
+            onClick={(e) => e.preventDefault()}
+            className="group bg-white border border-black/5 rounded-[12px] overflow-hidden shadow-sm hover:shadow-[5px_5px_0px_0px_#000] hover:border-black hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+          >
             <div className="aspect-[1.5] overflow-hidden bg-[#0A0A0A]">
-              <img src={postcardImg} alt="Postcard Marketing Guide" className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" />
+              <img
+                src={postcardImg}
+                alt="Postcard Marketing Guide"
+                className="w-full h-full object-cover group-hover:scale-[1.07] transition-transform duration-500"
+              />
             </div>
             <div className="p-4">
-              <h3 className="text-[15px] font-[700] leading-[1.3] tracking-[-0.02em] text-[#1A1A1A]">Postcard Marketing: The Definitive Guide to High ROI [2022]</h3>
+              <h3 className="text-[15px] font-[700] leading-[1.3] tracking-[-0.02em] text-[#1A1A1A] group-hover:text-[#009387] transition-colors">
+                Postcard Marketing: The Definitive Guide to High ROI [2022]
+              </h3>
+              <span className="mt-2 inline-flex items-center text-[11px] font-[700] tracking-[0.04em] uppercase text-[#FF6B1A] opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-300">
+                Read more →
+              </span>
             </div>
           </a>
 
           {/* Card 3 */}
-          <a href="#" className="group bg-white border border-black/5 rounded-[6px] overflow-hidden hover:shadow-[3px_3px_0px_0px_#000] hover:border-black transition-all">
+          <a
+            href="#"
+            onClick={(e) => e.preventDefault()}
+            className="group bg-white border border-black/5 rounded-[12px] overflow-hidden shadow-sm hover:shadow-[5px_5px_0px_0px_#000] hover:border-black hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+          >
             <div className="aspect-[1.5] overflow-hidden bg-[#EFF5F3] flex items-center justify-center">
-              <img src={thanksImg} alt="Thanks for your business" className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" />
+              <img
+                src={thanksImg}
+                alt="Thanks for your business"
+                className="w-full h-full object-cover group-hover:scale-[1.07] transition-transform duration-500"
+              />
             </div>
             <div className="p-4">
-              <h3 className="text-[15px] font-[700] leading-[1.3] tracking-[-0.02em] text-[#1A1A1A]">The Ultimate Guide to Thank You Notes for Ecommerce</h3>
+              <h3 className="text-[15px] font-[700] leading-[1.3] tracking-[-0.02em] text-[#1A1A1A] group-hover:text-[#009387] transition-colors">
+                The Ultimate Guide to Thank You Notes for Ecommerce
+              </h3>
+              <span className="mt-2 inline-flex items-center text-[11px] font-[700] tracking-[0.04em] uppercase text-[#FF6B1A] opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-300">
+                Read more →
+              </span>
             </div>
           </a>
         </div>

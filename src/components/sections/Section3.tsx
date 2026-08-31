@@ -2,7 +2,7 @@ import Button from "../layouts/Button";
 import bear from "../../assets/bear.png"
 const Section3 = () => {
   return (
-    <section className="bg-[#FFF7F0] py-12 sm:py-16 lg:py-20">
+    <section id="company" className="bg-[#FFF7F0] py-12 sm:py-16 lg:py-20 scroll-mt-[64px]">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Heading */}
         <h2 className="text-center max-w-[900px] mx-auto">
@@ -62,14 +62,14 @@ const Section3 = () => {
               & prospects. Target email leads with MailMatch™.
             </p>
 
-          <div className="mt-5 border border-black/10 rounded-[15px] p-8 shadow-sm max-w-[360px] relative">
+          <div className="mt-5 border border-black/10 rounded-[15px] p-8 shadow-sm max-w-[360px] relative bg-white hover:shadow-[4px_4px_0px_0px_#000] hover:border-black hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
             {/* Quote icon */}
             <svg
               width="28"
               height="22"
               viewBox="0 0 28 22"
               fill="none"
-              className="absolute -top-3 left-6"
+              className="absolute -top-3 left-6 group-hover:scale-110 transition-transform duration-300"
             >
               <path
                 d="M0 22V13.2C0 8.8 1.1 5.7 3.3 3.4C5.5 1.1 8.4 0 12 0V4.4C10.1 4.4 8.6 5 7.5 6.2C6.4 7.4 5.9 9 6 11H12V22H0ZM16 22V13.2C16 8.8 17.1 5.7 19.3 3.4C21.5 1.1 24.4 0 28 0V4.4C26.1 4.4 24.6 5 23.5 6.2C22.4 7.4 21.9 9 22 11H28V22H16Z"
@@ -77,7 +77,7 @@ const Section3 = () => {
               />
             </svg>
 
-            <p className="text-[16px] leading-[28px] italic text-[#2B2B2B] font-medium pt-3">
+            <p className="text-[16px] leading-[28px] italic text-[#2B2B2B] font-medium pt-3 group-hover:text-black transition-colors">
               It&apos;s like Klaviyo for direct mail. The results are absolutely insane.
             </p>
 
@@ -86,7 +86,7 @@ const Section3 = () => {
                 Ash Melwani, CMO
               </span>
               <span
-                className="text-[16px] font-extrabold text-black"
+                className="text-[16px] font-extrabold text-black group-hover:text-[#FF6B1A] transition-colors"
                 style={{ fontFamily: "'Comic Sans MS', cursive" }}
               >
                 obvi.
@@ -122,14 +122,14 @@ const Section3 = () => {
               Deliver your message to all of your customers — for less than the cost of a click.
             </p>
 
-          <div className="mt-5 border border-black/10 rounded-[15px] p-8 shadow-sm max-w-[500px] relative ">
+          <div className="mt-5 border border-black/10 rounded-[15px] p-8 shadow-sm max-w-[500px] relative bg-white hover:shadow-[4px_4px_0px_0px_#000] hover:border-black hover:-translate-y-1 transition-all duration-300 cursor-pointer group ">
             {/* Quote icon */}
             <svg
               width="28"
               height="22"
               viewBox="0 0 28 22"
               fill="none"
-              className="absolute -top-3 left-6"
+              className="absolute -top-3 left-6 group-hover:scale-110 transition-transform duration-300"
             >
               <path
                 d="M0 22V13.2C0 8.8 1.1 5.7 3.3 3.4C5.5 1.1 8.4 0 12 0V4.4C10.1 4.4 8.6 5 7.5 6.2C6.4 7.4 5.9 9 6 11H12V22H0ZM16 22V13.2C16 8.8 17.1 5.7 19.3 3.4C21.5 1.1 24.4 0 28 0V4.4C26.1 4.4 24.6 5 23.5 6.2C22.4 7.4 21.9 9 22 11H28V22H16Z"
@@ -137,7 +137,7 @@ const Section3 = () => {
               />
             </svg>
 
-            <p className="text-[16px] leading-[28px] italic text-[#2B2B2B] font-medium pt-3">
+            <p className="text-[16px] leading-[28px] italic text-[#2B2B2B] font-medium pt-3 group-hover:text-black transition-colors">
              PostPilot is our new weapon against sinking email engagement and rising PPC costs. The results and ROI have been outstanding. It’s now one of our core marketing channels to increase acquisition & LTV.
             </p>
 
@@ -146,7 +146,7 @@ const Section3 = () => {
                 Leah Keith, GM
               </span>
 
-              <img src={bear} alt="bear" className=" w-[32px] h-[24px]"></img>
+              <img src={bear} alt="bear" className=" w-[32px] h-[24px] group-hover:scale-110 transition-transform duration-300"></img>
             </div>
             </div>
           </div>
@@ -173,14 +173,14 @@ const Section3 = () => {
               From design & strategy to stamp-licking, our ecom experts help you every step of the way.
             </p>
 
-          <div className="mt-5 border border-black/10 rounded-[15px] p-8 shadow-sm max-w-[500px] relative">
+          <div className="mt-5 border border-black/10 rounded-[15px] p-8 shadow-sm max-w-[500px] relative bg-white hover:shadow-[4px_4px_0px_0px_#000] hover:border-black hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
             {/* Quote icon */}
             <svg
               width="28"
               height="22"
               viewBox="0 0 28 22"
               fill="none"
-              className="absolute -top-3 left-6"
+              className="absolute -top-3 left-6 group-hover:scale-110 transition-transform duration-300"
             >
               <path
                 d="M0 22V13.2C0 8.8 1.1 5.7 3.3 3.4C5.5 1.1 8.4 0 12 0V4.4C10.1 4.4 8.6 5 7.5 6.2C6.4 7.4 5.9 9 6 11H12V22H0ZM16 22V13.2C16 8.8 17.1 5.7 19.3 3.4C21.5 1.1 24.4 0 28 0V4.4C26.1 4.4 24.6 5 23.5 6.2C22.4 7.4 21.9 9 22 11H28V22H16Z"
@@ -188,7 +188,7 @@ const Section3 = () => {
               />
             </svg>
 
-            <p className="text-[16px] leading-[28px] italic text-[#2B2B2B] font-medium pt-3">
+            <p className="text-[16px] leading-[28px] italic text-[#2B2B2B] font-medium pt-3 group-hover:text-black transition-colors">
               The team is so knowledgeable and beyond helpful. I’m blown away by their communication, detail, and attentiveness and always feel like they have our best interest in mind. Definitely worth a try.
             </p>
 
@@ -197,7 +197,7 @@ const Section3 = () => {
                 Holly Davies, Marketing Director
               </span>
               <span
-                className="text-[16px] font-extrabold text-black"
+                className="text-[16px] font-extrabold text-black group-hover:text-[#FF6B1A] transition-colors"
                 style={{ fontFamily: "'Comic Sans MS', cursive" }}
               >
                 PARAGON
@@ -207,7 +207,7 @@ const Section3 = () => {
 
             <div className="mt-6">
               <Button
-                href="#try"
+                href="#pricing"
                 variant="primary"
                 size="sm"
                 className="uppercase tracking-[0.05em] text-[11px] font-[800] px-[22px] h-[40px] rounded-[8px]"

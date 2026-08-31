@@ -24,11 +24,11 @@ type ButtonAsAnchor = BaseProps &
 export type ButtonProps = ButtonAsButton | ButtonAsAnchor;
 
 const baseStyles =
-  "inline-flex items-center justify-center font-[500] tracking-[-0.01em] border-[1.5px] border-black shadow-[3px_3px_0px_0px_#000] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#000] active:translate-y-[2px] active:shadow-none transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none";
+  "inline-flex items-center justify-center font-[600] tracking-[-0.01em] border-[1.5px] border-black shadow-[3px_3px_0px_0px_#000] hover:-translate-y-[2px] hover:shadow-[5px_5px_0px_0px_#000] active:translate-y-[1px] active:shadow-[1px_1px_0px_0px_#000] transition-all duration-200 ease-out cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none select-none";
 
 const variantStyles: Record<Variant, string> = {
-  primary: "bg-[#FF6B1A] text-white",
-  secondary: "bg-white text-black",
+  primary: "bg-[#FF6B1A] text-white hover:bg-[#E85D10] hover:border-black",
+  secondary: "bg-white text-black hover:bg-black hover:text-white hover:border-black",
 };
 
 const sizeStyles: Record<Size, string> = {

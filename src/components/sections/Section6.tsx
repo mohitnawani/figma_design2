@@ -27,7 +27,7 @@ const testimonials = [
 
 const Section6 = () => {
   return (
-    <section className="bg-white py-14 sm:py-16 lg:py-20 overflow-hidden">
+    <section id="success-stories" className="bg-white py-14 sm:py-16 lg:py-20 overflow-hidden scroll-mt-[64px]">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <h2 className="text-center">
@@ -42,7 +42,7 @@ const Section6 = () => {
             }}
           >
             PostPilot is{" "}
-            <span role="img" aria-label="fire">
+            <span role="img" aria-label="fire" className="inline-block hover:scale-125 transition-transform duration-200 cursor-default">
               🔥
             </span>{" "}
             for{" "}
@@ -54,39 +54,40 @@ const Section6 = () => {
                 color: "#009387",
                 letterSpacing: "-0.5px",
               }}
+              className="hover:text-[#FF6B1A] transition-colors duration-300 cursor-default"
             >
               DTC
             </span>
           </span>
         </h2>
 
-        {/* Cards */}
+        {/* Cards - hover lift */}
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
           {testimonials.map((t) => (
             <div
               key={t.handle}
-              className="bg-white border-[1.5px] border-black rounded-[12px] p-5 flex flex-col min-h-[180px] shadow-[2px_2px_0px_0px_#000]"
+              className="group bg-white border-[1.5px] border-black rounded-[12px] p-5 flex flex-col min-h-[180px] shadow-[2px_2px_0px_0px_#000] hover:shadow-[5px_5px_0px_0px_#000] hover:-translate-y-1.5 hover:border-black hover:bg-[#FFFEF9] transition-all duration-300 cursor-pointer"
             >
               <div className="flex items-start justify-between gap-3">
                 <div className="flex items-center gap-3">
                   <img
                     src={t.avatar}
                     alt={t.name}
-                    className="w-10 h-10 rounded-full object-cover border border-black/10"
+                    className="w-10 h-10 rounded-full object-cover border border-black/10 group-hover:border-black group-hover:scale-110 transition-all duration-300"
                   />
                   <div>
-                    <p className="text-[13px] font-[700] leading-none text-[#1A1A1A] tracking-[-0.01em]">{t.name}</p>
-                    <p className="text-[11px] font-[500] leading-none text-[#6B6B6B] mt-1">{t.handle}</p>
+                    <p className="text-[13px] font-[700] leading-none text-[#1A1A1A] tracking-[-0.01em] group-hover:text-[#009387] transition-colors">{t.name}</p>
+                    <p className="text-[11px] font-[500] leading-none text-[#6B6B6B] mt-1 group-hover:text-black transition-colors">{t.handle}</p>
                   </div>
                 </div>
-                <img src={bird} alt="Twitter" className="w-5 h-5 object-contain mt-1" />
+                <img src={bird} alt="Twitter" className="w-5 h-5 object-contain mt-1 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
               </div>
               <p className="mt-4 text-[13px] leading-[1.6] text-[#2B2B2B] font-[500]">
                 {t.text.split("PostPilot").map((part, i, arr) =>
                   i < arr.length - 1 ? (
                     <span key={i}>
                       {part}
-                      <span className="font-[700]">PostPilot</span>
+                      <span className="font-[700] group-hover:text-[#FF6B1A] transition-colors">PostPilot</span>
                     </span>
                   ) : (
                     <span key={i}>{part}</span>
@@ -99,10 +100,15 @@ const Section6 = () => {
 
         <div className="mt-10 flex justify-center">
           <Button
-            href="#try"
+            href="#pricing"
             variant="primary"
             size="sm"
             className="uppercase tracking-[0.05em] text-[11px] font-[800] px-[28px] h-[44px] rounded-[8px]"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
+              history.pushState(null, "", "#pricing");
+            }}
           >
             TRY IT RISK-FREE
           </Button>

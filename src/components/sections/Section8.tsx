@@ -2,7 +2,7 @@ import pawImg from "../../assets/paw.png";
 
 const Section8 = () => {
   return (
-    <section className="bg-[#FF6B1A] py-12 sm:py-14 lg:py-16 overflow-hidden">
+    <section id="pricing" className="bg-[#FF6B1A] py-12 sm:py-14 lg:py-16 overflow-hidden scroll-mt-[64px]">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
           {/* Left */}
@@ -21,8 +21,13 @@ const Section8 = () => {
 
             <div className="mt-7 flex flex-wrap items-center gap-5">
               <a
-                href="#get-started"
-                className="inline-flex items-center justify-center px-7 h-[42px] rounded-[10px] bg-white border-[1.5px] border-black text-[11px] font-[800] tracking-[0.06em] text-black shadow-[3px_3px_0px_0px_#000] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#000] active:translate-y-[2px] active:shadow-none transition-all uppercase"
+                href="#pricing"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
+                  history.pushState(null, "", "#pricing");
+                }}
+                className="inline-flex items-center justify-center px-7 h-[42px] rounded-[10px] bg-white border-[1.5px] border-black text-[11px] font-[800] tracking-[0.06em] text-black shadow-[3px_3px_0px_0px_#000] hover:bg-black hover:text-white hover:-translate-y-[2px] hover:shadow-[5px_5px_0px_0px_#000] active:translate-y-[1px] active:shadow-none transition-all duration-200 uppercase cursor-pointer"
               >
                 GET STARTED
               </a>
@@ -43,12 +48,12 @@ const Section8 = () => {
             </p>
           </div>
 
-          {/* Right - paw image */}
-          <div className="relative flex justify-center lg:justify-end">
+          {/* Right - paw image with hover */}
+          <div className="relative flex justify-center lg:justify-end group">
             <img
               src={pawImg}
               alt="Paw postcard - Looking for some PAWsome deals?"
-              className="w-[320px] sm:w-[380px] lg:w-[440px] xl:w-[480px] h-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.18)] rotate-[-2deg]"
+              className="w-[320px] sm:w-[380px] lg:w-[440px] xl:w-[480px] h-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.18)] rotate-[-2deg] group-hover:rotate-0 group-hover:scale-[1.04] group-hover:drop-shadow-[0_20px_40px_rgba(0,0,0,0.28)] transition-all duration-500 cursor-pointer"
             />
           </div>
         </div>

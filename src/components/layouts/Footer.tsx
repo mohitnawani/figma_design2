@@ -21,18 +21,18 @@ const Footer = () => {
             <p className="text-[10px] font-[700] tracking-[0.14em] text-black uppercase">COMPANY</p>
             <div className="mt-4 grid grid-cols-2 gap-8">
               <ul className="space-y-3">
-                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:opacity-70">About us</a></li>
-                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:opacity-70">Partner program</a></li>
-                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:opacity-70">Career</a></li>
-                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:opacity-70">Contact us</a></li>
-                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:opacity-70">Privacy Policy</a></li>
+                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:text-[#009387] hover:translate-x-1 transition-all duration-200 inline-block">About us</a></li>
+                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:text-[#009387] hover:translate-x-1 transition-all duration-200 inline-block">Partner program</a></li>
+                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:text-[#009387] hover:translate-x-1 transition-all duration-200 inline-block">Career</a></li>
+                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:text-[#009387] hover:translate-x-1 transition-all duration-200 inline-block">Contact us</a></li>
+                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:text-[#009387] hover:translate-x-1 transition-all duration-200 inline-block">Privacy Policy</a></li>
               </ul>
               <ul className="space-y-3">
-                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:opacity-70">Pricing</a></li>
-                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:opacity-70">Reviews</a></li>
-                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:opacity-70">Direct Mail Academy</a></li>
-                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:opacity-70">Success stories</a></li>
-                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:opacity-70">Terms & conditions</a></li>
+                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:text-[#009387] hover:translate-x-1 transition-all duration-200 inline-block">Pricing</a></li>
+                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:text-[#009387] hover:translate-x-1 transition-all duration-200 inline-block">Reviews</a></li>
+                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:text-[#009387] hover:translate-x-1 transition-all duration-200 inline-block">Direct Mail Academy</a></li>
+                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:text-[#009387] hover:translate-x-1 transition-all duration-200 inline-block">Success stories</a></li>
+                <li><a href="#" className="text-[13px] font-[500] text-[#1A1A1A] hover:text-[#009387] hover:translate-x-1 transition-all duration-200 inline-block">Terms & conditions</a></li>
               </ul>
             </div>
           </div>
@@ -40,7 +40,7 @@ const Footer = () => {
           {/* CONTACT */}
           <div className="lg:col-span-3">
             <p className="text-[10px] font-[700] tracking-[0.14em] text-black uppercase">CONTACT</p>
-            <a href="mailto:support@postpilot.com" className="mt-4 inline-flex items-center gap-2 text-[13px] font-[500] text-[#1A1A1A] hover:opacity-70">
+            <a href="mailto:support@postpilot.com" className="mt-4 inline-flex items-center gap-2 text-[13px] font-[500] text-[#1A1A1A] hover:text-[#009387] transition-colors duration-200">
               <span className="w-5 h-5 border border-black rounded-[3px] flex items-center justify-center text-[10px] leading-none">✉</span>
               support@postpilot.com
             </a>
