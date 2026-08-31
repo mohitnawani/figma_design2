@@ -7,32 +7,18 @@ const Section4 = () => {
   return (
     <section className="bg-white py-12 sm:py-16">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading - spec: Inter 700 58/70 -2px + Covered By Your Grace 400 58/70 -2px */}
         <h2 className="text-center max-w-[900px] mx-auto">
           <span
-            className="block text-[#1A1A1A]"
-            style={{
-              fontFamily: "Inter, sans-serif",
-              fontWeight: 700,
-              fontSize: "58px",
-              lineHeight: "70px",
-              letterSpacing: "-2px",
-              verticalAlign: "middle",
-              textAlign: "center",
-            }}
+            className="block text-[#1A1A1A] text-[28px] sm:text-[42px] lg:text-[58px] leading-[1.1] tracking-[-0.02em] lg:tracking-[-2px]"
+            style={{ fontFamily: "Inter, sans-serif", fontWeight: 700 }}
           >
             Everything your brand needs to
           </span>
           <span
-            className="block"
+            className="block text-[28px] sm:text-[42px] lg:text-[58px] leading-[1.1] tracking-[-0.02em] lg:tracking-[-2px]"
             style={{
               fontFamily: '"Covered By Your Grace", cursive',
               fontWeight: 400,
-              fontSize: "58px",
-              lineHeight: "70px",
-              letterSpacing: "-2px",
-              verticalAlign: "middle",
-              textAlign: "center",
               color: "#009387",
             }}
           >

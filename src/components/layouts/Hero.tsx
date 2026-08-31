@@ -4,12 +4,12 @@ import Button from "./Button";
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-[#E6F2EE] overflow-hidden py-[128px]">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-6">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-4 items-center px-0 py-20px">
+    <section className="bg-[#E6F2EE] overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16 xl:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-6 items-center">
           {/* LEFT */}
-          <div className="max-w-[900px] w-[780px] h-[288] py-4">
-            <h1 className="text-[40px] sm:text-[48px] lg:text-[82px] font-[700] leading-[96px] tracking-[0] text-[#1A1A1A]">
+          <div className="max-w-[600px] w-full py-2 sm:py-4">
+            <h1 className="text-[36px] sm:text-[48px] lg:text-[64px] xl:text-[78px] font-[700] leading-[0.95] sm:leading-[0.95] tracking-[-0.02em] text-[#1A1A1A]">
               <span className="block">Meet your</span>
               <span className="block">
                 <span
@@ -60,15 +60,19 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* RIGHT */}
-          
-            <div className="relative">
-                <img src={snaxImg} alt="snax" className="z-2 absolute w-200 h-auto right-0 top-[1px]"/>
-                <img src={graph} alt="graph" className="z-4 absolute  w- h-auto right-0 top-[1px]" />
-
-            </div>
-
-          
+          {/* RIGHT - responsive stacked images */}
+          <div className="relative w-full flex flex-col items-center lg:items-end gap-4 lg:gap-3">
+            <img
+              src={snaxImg}
+              alt="Snax postcard example"
+              className="w-full max-w-[420px] sm:max-w-[480px] lg:max-w-[520px] h-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.12)]"
+            />
+            <img
+              src={graph}
+              alt="Performance graph"
+              className="w-full max-w-[380px] sm:max-w-[420px] lg:max-w-[440px] h-auto object-contain rounded-[10px] border border-black/5 bg-white shadow-sm lg:-mt-6 lg:mr-4"
+            />
+          </div>
         </div>
       </div>
     </section>

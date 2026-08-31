@@ -35,42 +35,26 @@ const Section1 = () => {
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading - exact spec: Inter 700 63/76 -2px + Covered By Your Grace 400 63/76 -2px */}
+        {/* Heading - responsive: 32px mobile -> 63px desktop */}
         <h2 className="text-center">
           <span
-            className="block text-[#1A1A1A]"
-            style={{
-              fontFamily: 'Inter, sans-serif',
-              fontWeight: 700,
-              fontSize: '63px',
-              lineHeight: '76px',
-              letterSpacing: '-2px',
-              textAlign: 'center',
-              verticalAlign: 'middle',
-            }}
+            className="block text-[#1A1A1A] text-[32px] sm:text-[44px] lg:text-[63px] leading-[1.1] sm:leading-[1.15] tracking-[-0.02em] sm:tracking-[-2px]"
+            style={{ fontFamily: 'Inter, sans-serif', fontWeight: 700 }}
           >
             Trusted by thousands
           </span>
           <span
-            className="block text-[#1A1A1A]"
-            style={{
-              fontFamily: 'Inter, sans-serif',
-              fontWeight: 700,
-              fontSize: '63px',
-              lineHeight: '76px',
-              letterSpacing: '-2px',
-              textAlign: 'center',
-              verticalAlign: 'middle',
-            }}
+            className="block text-[#1A1A1A] text-[32px] sm:text-[44px] lg:text-[63px] leading-[1.1] sm:leading-[1.15] tracking-[-0.02em] sm:tracking-[-2px]"
+            style={{ fontFamily: 'Inter, sans-serif', fontWeight: 700 }}
           >
             of top DTC{" "}
             <span
+              className="text-[32px] sm:text-[44px] lg:text-[63px]"
               style={{
                 fontFamily: '"Covered By Your Grace", cursive',
                 fontWeight: 400,
-                fontSize: '63px',
-                lineHeight: '76px',
-                letterSpacing: '-2px',
+                lineHeight: '1.1',
+                letterSpacing: '-1px',
                 color: '#009387',
               }}
             >

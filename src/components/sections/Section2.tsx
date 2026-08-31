@@ -2,39 +2,27 @@ import mailImg from "../../assets/mail.png";
 
 const Section2 = () => {
   return (
-    <section className="bg-[ #F3FAFA] py-14 sm:py-16 lg:py-20">
+    <section className="bg-[#F3FAFA] py-14 sm:py-16 lg:py-20">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <h2 className="text-center">
           <span
-            className="block text-[#1A1A1A]"
-            style={{
-              fontFamily: "Inter, sans-serif",
-              fontWeight: 700,
-              fontSize: "63px",
-              lineHeight: "56px",
-              letterSpacing: "-1.5px",
-            }}
+            className="block text-[#1A1A1A] text-[32px] sm:text-[44px] lg:text-[63px] leading-[1.1] tracking-[-0.02em] lg:tracking-[-1.5px]"
+            style={{ fontFamily: "Inter, sans-serif", fontWeight: 700 }}
           >
             Why use direct mail?
           </span>
           <span
-            className="block text-[#1A1A1A]"
-            style={{
-              fontFamily: "Inter, sans-serif",
-              fontWeight: 700,
-              fontSize: "63px",
-              lineHeight: "56px",
-              letterSpacing: "-1.5px",
-            }}
+            className="block text-[#1A1A1A] text-[32px] sm:text-[44px] lg:text-[63px] leading-[1.1] tracking-[-0.02em] lg:tracking-[-1.5px]"
+            style={{ fontFamily: "Inter, sans-serif", fontWeight: 700 }}
           >
             It{" "}
             <span
+              className="text-[32px] sm:text-[44px] lg:text-[63px]"
               style={{
                 fontFamily: '"Covered By Your Grace", cursive',
                 fontWeight: 400,
-                fontSize: "63px",
-                lineHeight: "56px",
+                lineHeight: "1.1",
                 letterSpacing: "-1px",
                 color: "#009387",
               }}
@@ -65,7 +53,7 @@ const Section2 = () => {
               alt="90% Direct mail vs 20% Email - Your messages get read"
               className="w-[220px] sm:w-[240px] lg:w-[228px] xl:w-[220px] h-auto object-contain"
             />
-            <p className="mt-3 text-[115x] font-[500] text-[#6B6B6B] tracking-[-0.01em]">
+            <p className="mt-3 text-[13px] font-[500] text-[#6B6B6B] tracking-[-0.01em]">
               Your messages get read
             </p>
           </div>

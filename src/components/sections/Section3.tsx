@@ -7,23 +7,17 @@ const Section3 = () => {
         {/* Top Heading */}
         <h2 className="text-center max-w-[900px] mx-auto">
           <span
-            className="block text-[#1A1A1A]"
-            style={{
-              fontFamily: "Inter, sans-serif",
-              fontWeight: 800,
-              fontSize: "70px",
-              lineHeight: "1.15",
-              letterSpacing: "-2px",
-            }}
+            className="block text-[#1A1A1A] text-[32px] sm:text-[48px] lg:text-[58px] xl:text-[70px] leading-[1.1] tracking-[-0.02em] lg:tracking-[-2px]"
+            style={{ fontFamily: "Inter, sans-serif", fontWeight: 800 }}
           >
             PostPilot makes it a{" "}
             <span
+              className="text-[38px] sm:text-[56px] lg:text-[68px] xl:text-[90px]"
               style={{
                 fontFamily: '"Covered By Your Grace", cursive',
                 fontWeight: 400,
-                fontSize: "90px",
                 color: "#009387",
-                letterSpacing: "-2px",
+                letterSpacing: "-1px",
               }}
             >
               cinch
@@ -31,14 +25,8 @@ const Section3 = () => {
             to
           </span>
           <span
-            className="block text-[#1A1A1A]"
-            style={{
-              fontFamily: "Inter, sans-serif",
-              fontWeight: 800,
-              fontSize: "70px",
-              lineHeight: "1.15",
-              letterSpacing: "-0.02em",
-            }}
+            className="block text-[#1A1A1A] text-[32px] sm:text-[48px] lg:text-[58px] xl:text-[70px] leading-[1.1] tracking-[-0.02em]"
+            style={{ fontFamily: "Inter, sans-serif", fontWeight: 800 }}
           >
             send personalized, profit-
             <br />
@@ -51,19 +39,17 @@ const Section3 = () => {
           <div className="max-w-[800px]">
             <h3 className="leading-none">
               <span
-                className="block"
+                className="block text-[48px] sm:text-[60px] lg:text-[80px] leading-[0.9]"
                 style={{
                   fontFamily: '"Covered By Your Grace", cursive',
                   fontWeight: 400,
-                  fontSize: "80px",
-                  lineHeight: "70px",
                   color: "#009387",
-                  letterSpacing: "-4px"
+                  letterSpacing: "-2px",
                 }}
               >
                 Powerful
               </span>
-              <span className="block text-[#1A1A1A] font-[700] text-[80px] leading-[1.1] tracking-[-4px] -mt-1">
+              <span className="block text-[#1A1A1A] font-[700] text-[36px] sm:text-[56px] lg:text-[80px] leading-[1.05] tracking-[-0.02em] lg:tracking-[-4px] -mt-1">
                 acquisition
                 <br />& retention
               </span>
@@ -113,24 +99,22 @@ const Section3 = () => {
           <div className="max-w-[700px] lg:ml-auto">
             <h3 className="leading-none">
               <span
-                className="block"
+                className="block text-[48px] sm:text-[60px] lg:text-[80px] leading-[0.9]"
                 style={{
                   fontFamily: '"Covered By Your Grace", cursive',
                   fontWeight: 400,
-                  fontSize: "80px",
-                  lineHeight: "70px",
                   color: "#009387",
-                  letterSpacing: "-4px"
+                  letterSpacing: "-2px",
                 }}
               >
                 Fight back
               </span>
-              <span className="block text-[#1A1A1A] font-[700] text-[80px] leading-[1.1] tracking-[-4px] -mt-1">
+              <span className="block text-[#1A1A1A] font-[700] text-[32px] sm:text-[52px] lg:text-[80px] leading-[1.05] tracking-[-0.02em] lg:tracking-[-4px] -mt-1">
                 against iOS updates,
                 <br />
                 jacked-up
               </span>
-              <span className="block text-[#1A1A1A] font-[800] text-[60px] leading-[1.1] tracking-[-0.02em]">
+              <span className="block text-[#1A1A1A] font-[800] text-[28px] sm:text-[44px] lg:text-[60px] leading-[1.1] tracking-[-0.02em]">
                 CPCs & spam folders
               </span>
             </h3>
@@ -167,23 +151,19 @@ const Section3 = () => {
             </div>
           </div>
 
-          {/* Block 3 - Left - spec: W293 H70 / Inter 700 58/70 -2px + Covered By Your Grace 400 58/70 -2px */}
-          <div className="max-w-[420px]">
-            <h3
-              className="flex items-baseline gap-2"
-              style={{ width: "400px", height: "70px", alignItems: "center" }}
-            >
-              <span className="block text-[#1A1A1A] font-[700] text-[80px] leading-[1.1] tracking-[-4px] -mt-1"> 
+          {/* Block 3 - Left */}
+          <div className="max-w-[520px]">
+            <h3 className="flex flex-wrap items-baseline gap-2">
+              <span className="text-[#1A1A1A] font-[700] text-[36px] sm:text-[56px] lg:text-[80px] leading-none tracking-[-0.02em] lg:tracking-[-4px]">
                 Done for
               </span>
               <span
+                className="text-[48px] sm:text-[60px] lg:text-[80px] leading-none"
                 style={{
                   fontFamily: '"Covered By Your Grace", cursive',
                   fontWeight: 400,
-                  fontSize: "80px",
-                  lineHeight: "70px",
                   color: "#009387",
-                  letterSpacing: "-4px"
+                  letterSpacing: "-2px",
                 }}
               >
                 you
